@@ -1,26 +1,45 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Trivial Quiz</title>
-  
-  <link rel="stylesheet" href="trivial-css.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game Code</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
+
 <body>
 
-  <header>Trivial Quiz</header>
-   
-  <div id="timer"><span id="timer"></span></div>
-  
-  <div id="quiz"></div>
+    <div class="container">
+        <div class="main">
+            <div class="row start-page">
+                <div class="row img-initial col-sm-12"></div>
+                <div class="row">
+                    <div class="start-btn">Start</div>
+                </div>
+            </div>
 
-  <button id="submit">Get Results</button>
+            <div class="row questions-page">
+                <div class='timer text-left col-sm-3'></div>
+                <div class="question col-sm-6"></div>
+                <div class='score text-right col-sm-3'>
+                    <div class="right"></div>
+                    <div class="wrong"></div>
+                </div>
+            </div>
+            <div class="row answers"></div>
+            <div class="row reset-button"></div>
+        </div>
 
-  <div id="results"></div>
+    </div>
 
-  <script src="trivial-js.js"></script>
-    
-    
+    <script src="assets/javascript/app.js"></script>
+</body>
+
 </html>
